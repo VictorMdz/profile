@@ -10,12 +10,13 @@ p {
   margin: 0;
   font-family: 'Merriweather', serif;
   font-weight: 900;
-  font-size: 24px;
 }
 
-p.subtitle  {
-  font-size: 18px;
+p.subtitle, p.description  {
+  font-size: 20px;
 }
+
+
 
 h1 {
   font-size: 125px;
@@ -40,9 +41,10 @@ h2 {
 }
 
 .img-rectangular {
-  width: 450px;
+  width: 100%;
   height: 630px;
   object-fit: cover;
+  margin-bottom: 20px;
 }
 
 .img-circle {
@@ -100,7 +102,7 @@ a:hover {
 }
 
 .container-media {
-  width: 50%;
+  width: 40%;
   padding-bottom: 20px;
   margin: 0 auto;
   display: flex;
@@ -109,7 +111,7 @@ a:hover {
 
 #main-title {
   padding: 70px 0px 350px;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -124,8 +126,7 @@ a:hover {
 }
 
 .description {
-  width: 440px;
-  margin: 0px 590px;
+  width: 100%;
 }
 
 .footer {
@@ -136,28 +137,47 @@ a:hover {
 
 /* For a screen < 960px, this CSS will be read */
 @media (max-width: 960px) {
-  .container {
-    width: 80%;
+  #main-title {
+    width: 60%
+  }
+
+  .container-media {
+    width: 50%;
+  }
+
+  .img-rectangular {
+    height: 450px;
   }
 }
 
 /* For a screen < 720px, this CSS will be read */
 @media (max-width: 720px) {
-  .container {
-    width: 90%;
+  .container-media {
+    width: 70%;
   }
-  .img-circle {
-    width: 150px;
-    height: 150px;
+
+  h1 {
+    font-size: 65px;
+  }
+
+  .img-rectangular {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+  }
+
+  p.subtitle {
+    font-size: 12px;
+  }
+
+  .footer {
+    padding: 50px;
   }
 }
 
 
 /* For a screen < 540px, this CSS will be read */
 @media (max-width: 540px) {
-  .container {
-    width: 95%;
-  }
 
   .img-circle {
   width: 100px;
