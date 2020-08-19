@@ -1,24 +1,48 @@
 body {
   background-color: #f1f2f6;
   font-family: 'Roboto';
+  margin: 0;
 }
 
 p {
   line-height: 1.5;
   color: #2f2f2f;
-  margin: 50px 0;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+p.subtitle  {
+  font-size: 18px;
 }
 
 h1 {
-  font-size: 45px;
-  font-weight: 900;
-  margin: 10px 0;
+  font-size: 125px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+  font-family: 'Six Caps', sans-serif;
+  letter-spacing: 10px;
+  line-height: 1;
+  font-weight: 100;
 }
 
 h2 {
   font-size: 28px;
   font-weight: 100;
   margin: 20px 0 40px;
+  color: #fff;
+}
+
+.footer h2 {
+  color: #000;
+}
+
+.img-rectangular {
+  width: 450px;
+  height: 630px;
+  object-fit: cover;
 }
 
 .img-circle {
@@ -57,7 +81,7 @@ a:hover {
   margin-right: 20px;
 }
 
-.card ul {
+.footer ul {
   padding: 0;
 }
 
@@ -67,23 +91,48 @@ a:hover {
 
 /* Divs style*/
 .container {
-  width: 60%;
-  margin: 0 auto;
+  margin: 0 auto -340px;
+  background-color: #2B4A46;
 }
 
 .text-center {
   text-align: center;
 }
 
-.card {
-  background-color: #fff;
-  padding: 60px 120px;
-  margin: 50px 0;
-  border-radius: 5px;
-  box-shadow: 0 0 60px #e0e0e0;
+.container-media {
+  width: 50%;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
 }
 
+#main-title {
+  padding: 70px 0px 350px;
+  width: 50%;
+  margin: 0 auto;
+}
 
+.subtitle {
+  margin-top: 50px;
+  margin-right: 20px;
+  color: #fff;
+  opacity: 0.8;
+  /*font-family: 'Merriweather', serif;*/
+  font-weight: 100;
+  width: 30%;
+}
+
+.description {
+  width: 440px;
+  margin: 0px 590px;
+}
+
+.footer {
+  padding: 100px;
+  background-color: #DBD8D5;
+  margin-top: 70px;
+}
 
 /* For a screen < 960px, this CSS will be read */
 @media (max-width: 960px) {
